@@ -16,10 +16,10 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ad labore, totam est animi numquam! Ex, ipsam suscipit. Dolores similique deserunt nostrum minima dignissimos incidunt quaerat. Non ab nemo obcaecati.</p>
 
     <script>
-        var n1 = Number.parseInt(window.prompt('Digite um número.'))//números quebrados se usa parseFloat. jeito atual apenas Number.
-        var n2 = Number.parseInt(window.prompt('Digite outro número: '))// ao inverso se usa String(n)  ou   n.toString()
+        var n1 = Number(window.prompt('Digite um número.'))//números quebrados se usa parseFloat. jeito atual apenas Number
+        var n2 = Number(window.prompt('Digite outro número: '))// ao inverso se usa String(n)  ou   n.toString()
         var s = n1 + n2
-        window.alert('o resultado é ' + s)
+        window.alert( `o resultado é ${s}`)
         
     </script>
 

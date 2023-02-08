@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições02</title>
+</head>
+<body>
+    <h1>País de nascimento</h1>
+    <label for="ipais">Qual Pais você nasceu?</label>
+    <input type="text" name="ipais" id="ipais">
+    <input type="button" value="Enviar" onclick="pertence()">
+    <div id="res"></div>
+
+    <script>
+        function pertence() {
+            var pais = document.querySelector('input#ipais')
+            var res = document.querySelector('div#res')
+            var resposta = (pais.value)
+            res.innerHTML = `você nasceu no ${resposta}`
+            if (resposta == 'Brasil') {
+                res.innerHTML += `<P>Você é Brasileiro</p>`
+            }
+            else {
+                res.innerHTML += `<p>Você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>

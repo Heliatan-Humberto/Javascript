@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar idade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripty.js"></script>
+</head>
+<body>
+    <header>
+        <H1>Verficador de Idade</H1>
+    </header>
+       <fieldset id="campo">
+           <div>
+                <label for="iidade">Qual ano você nasceu?</label>
+                <input type="number" name="iidade" id="idade"> <br>
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="Msexo" value="M" checked> <label for="Msexo">Masculino</label>
+                <input type="radio" name="sexo" id="Fsexo" value="F"> <label for="Fsexo">Feminino</label>
+            </div>
+           <div id="res">
+                Preencha os dados a cima para continuar!
+           </div>
+
+           <input id="send" type="button" value="enviar" onclick="resultado()">
+
+           <img id="foto" src="Fotos/foto-adulto-f.png" alt="adulto">
+
+       </fieldset>
+    <footer>
+        <p>Exercicio feito pra o <strong>CursoEmVideo.</strong></p> <br>
+    </footer>
+</body>
+</html>

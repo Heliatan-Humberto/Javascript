@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador</title>
+    <script src="scripty.js"></script>
+    <style>
+        *  {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 3px;
+        }
+
+        body {
+            background-color: blue;
+        }
+        header {
+            color: white;
+            text-align: center;
+            margin-top: 15px;
+        }
+        section {
+            margin: auto;
+            background-color: white;
+            width: 60vw;
+            height: 20vh;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        div#campo {
+            padding: 20px;
+            
+        }
+        footer  {
+            text-align: center;
+            color: white;
+        }
+        div#res {
+            text-indent: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>
+    </header>
+    <section>
+        <div id="campo">
+            <label for="inicio">Início: </label>
+           <input type="number" name="inico" id="iinicio"> <br>
+           <label for="fim">Fim: </label>
+           <input type="number" name="fim" id="ifim"> <br>
+           <label for="passo">Passo: </label>
+           <input type="number" name="passo" id="ipasso">  <br>
+
+           <input id="icalc" type="button" value="Calcular" onclick="calcular()">
+        </div>
+        <div id="ires">
+            <p>contagem...</p>
+        </div>
+    </section>
+    <footer>
+        <p>Exercício feito para o <strong>CursoemVideo.</strong></p>
+    </footer>
+</body>
+</html>

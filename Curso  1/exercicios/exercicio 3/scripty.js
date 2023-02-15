@@ -22,4 +22,3 @@ function  calcular() {
         res.innerHTML += `\u{1f3c1}`
     } 
 }
- 

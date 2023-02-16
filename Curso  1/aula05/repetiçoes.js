@@ -3,7 +3,13 @@ for (var c=1 ;c <= 6 ; c++)  {
 }
 
 
+/* 
+estrutura         for (variavel =   ;     variavel + condição de repetição    ;   variavel  +   oque acontecera) {
 
+}
+
+
+*/ 
 /*
 
 var c = 1

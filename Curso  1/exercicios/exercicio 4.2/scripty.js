@@ -3,7 +3,7 @@ function calcular() {
     var res = document.querySelector('select#itabuada')
     var show  = document.querySelector('div#res')
 
-    if(num < 0) {
+    if(num < 0 ) {
         window.alert('Número invalido!')
     }
     else {

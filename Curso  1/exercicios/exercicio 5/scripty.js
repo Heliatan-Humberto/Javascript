@@ -1,11 +1,12 @@
 
 let n1 = []
+n1.sort()
 
 function adicionar() {
     var num = Number(document.querySelector('input#inumero').value)
     var res = document.querySelector('select#iresposta')
-    var show = document.querySelector('div#res')
-    
+    var show = document.querySelector('select#iresposta')
+    var resposta = document.querySelector('div#res')
     if(num <=0 || num > 100) {
         window.alert('valor invalido!')
     }
@@ -15,20 +16,25 @@ function adicionar() {
         let item = document.createElement('option')
         item.text = (`Valor ${num} foi adicionado.`)
         res.appendChild(item)
-        
     }
+    resposta.innerHTML = ''
 }
-
 
 function finalizar() {
     var resposta = document.querySelector('div#res')
-
+    resposta.innerHTML  = ''
+    
     let n = n1
     n.sort()
 
+    if (n == 0) {
+        window.alert('Defina um valor')
+    }
+    else {
+
     let totalcadastrado = n.length
     let menor = n[0]
-    let maior = n[totalcadastrado - 1]
+    let maior = n[totalcadastrado -1]
     let total = 0
 
     for (let soma = 0; soma < n1.length; soma++ ) {
@@ -37,24 +43,11 @@ function finalizar() {
     
     let media = total / totalcadastrado
 
-
-    const paragrafo = document.createElement('p')
-    const texto = document.createTextNode(`Ao todo temos ${totalcadastrado} números cadastrados.`)
-    const texto2 = document.createTextNode(`O menor número é ${menor}`)
-    const texto3 = document.createTextNode(`O maior número é ${maior}`)
-    const texto4 = document.createTextNode(`A soma dos Valores é igual a ${total}`)
-    const texto5 = document.createTextNode(`A média dos números é ${media}`)
-    
-    paragrafo.appendChild(texto) 
-    paragrafo.appendChild(texto2)
-    paragrafo.appendChild(texto3)
-    paragrafo.appendChild(texto4)
-    paragrafo.appendChild(texto5)
-    
-    resposta.innerHTML += paragrafo.innerHTML            
-    
+    resposta.innerHTML += `<p> O total de valores cadastrado é ${totalcadastrado} </p>`
+    resposta.innerHTML += `<p> O menor valor é ${menor} </p>`
+    resposta.innerHTML += `<p> O maior valor é ${maior} </p>`         
+    resposta.innerHTML += `<p> A soma dos valores é ${total} </p>`
+    resposta.innerHTML += `<p> A média dos valores é ${media} </p>`
+}
 }
 
-function limpar() {
-    
-}

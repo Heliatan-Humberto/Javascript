@@ -35,21 +35,20 @@
         }
         div#campo {
             padding: 20px;
-            
         }
         footer  {
             text-align: center;
             color: white;
         }
-        div#res {
-            text-indent: 15px;
+        select#iresposta {
+            text-indent: 5px;
             display: none;
-            place-content: center;
-        }
-        select {
+            place-content: left;
             overflow: hidden;
         }
-
+        div#res {
+            text-indent: 20px;
+        }
 
     </style>
 </head>
@@ -65,11 +64,12 @@
             <input type="button" value="Adicionar" onclick="adicionar()"> <br>
 
             <input type="button" value="finalizar" onclick="finalizar()">
-            <input type="button" value="Limpar" onclick="limpar()">
+
+            <select name="resposta" id="iresposta" size="12" >
+            </select>
         </div>
         <div id="res">
-               <select name="resposta" id="iresposta" size="12" >
-               </select>
+               
         </div>
     </section>
     <footer>
